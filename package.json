@@ -2,6 +2,7 @@
   "name": "@allmaps/here",
   "version": "0.0.1",
   "scripts": {
+    "start": "svelte-kit preview --host --port ${PORT-3000}",
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
