@@ -46,7 +46,6 @@
     if (positionFeature && coordinates && transformer) {
       const imageCoordinates = toImage(transformer, coordinates)
       positionFeature.setGeometry(new Point([imageCoordinates[0], -imageCoordinates[1]]))
-      console.log(coordinates, imageCoordinates)
     }
   }
 
