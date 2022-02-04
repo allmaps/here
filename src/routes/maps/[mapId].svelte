@@ -99,15 +99,9 @@
     const geolocation = new Geolocation({
       tracking: true,
       trackingOptions: {
-        enableHighAccuracy: true,
-        maximumAge: 100,
-        timeout: 50000
+        enableHighAccuracy: true
       }
     })
-
-    setInterval(() => {
-      updatePosition(geolocation.getPosition())
-    }, 2500)
 
     geolocation.on('change:position', function () {
       const coordinates = geolocation.getPosition()
@@ -117,6 +111,8 @@
     geolocation.on('error', (error) => {
       console.error(error)
     })
+
+    geolocation.setTracking(true)
   })
 
   const transformer = createTransformer(georef.gcps)
