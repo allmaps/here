@@ -60,13 +60,13 @@
     positionFeature.setStyle(
       new Style({
         image: new CircleStyle({
-          radius: 6,
+          radius: 7,
           fill: new Fill({
-            color: '#f309CC'
+            color: '#0a84fe'
           }),
           stroke: new Stroke({
             color: '#fff',
-            width: 1
+            width: 3
           })
         })
       })
